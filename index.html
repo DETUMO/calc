@@ -9,26 +9,35 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    <div class="container">
+        <section class="cont">
+		<form name="calculator">
 
-        <div class="grid-container">
-            <div class="grid-item">*</div>
-            <div class="grid-item">-</div>
-            <div class="grid-item">x</div>  
-            <div class="grid-item">/</div>
-            <div class="grid-item">7</div>
-            <div class="grid-item">8</div>  
-            <div class="grid-item">9</div>
-            <div class="grid-item">4</div>
-            <div class="grid-item">5</div>  
-            <div class="grid-item">6</div>  
-            <div class="grid-item">1</div>  
-            <div class="grid-item">2</div>  
-            <div class="grid-item">3</div>  
-            <div class="grid-item">0</div>  
-            <div class="grid-item">.</div>  
-            <div class="grid-item">AC</div>
-            <div class="equal">=</div>  
-          </div>
+			<input id="display" type="text" name="display" readonly>
+
+			<input class="button digits" type="button" value="7" onclick="display.value += '7'">
+			<input class="button digits" type="button" value="8" onclick="display.value += '8'">
+			<input class="button digits" type="button" value="9" onclick="display.value += '9'">
+			<input class="button digits" type="button" value="+"onclick="display.value += '+'">
+			<br>
+			<input class="button digits" type="button" value="4" onclick="display.value += '4'">
+			<input class="button digits" type="button" value="5"onclick="display.value += '5'">
+			<input class="button digits" type="button" value="6"onclick="display.value += '6'">
+			<input class="button digits" type="button" value="-"onclick="display.value += '-'">
+			<br>
+			<input class="button digits" type="button" value="1"onclick="display.value += '1'">
+			<input class="button digits" type="button" value="2"onclick="display.value += '2'">
+			<input class="button digits" type="button" value="3" onclick="display.value += '3'">
+			<input class="button digits" type="button" value="x" onclick="display.value += 'x'">
+			<br>
+			<input id="clearButton" class="button" type="button" value="C"onclick="display.value = ''" >
+			<input class="button digits" type="button" value="0" onclick="display.value += '0'">
+			<input class="button digits" type="button" value="="onclick="display.value += ''">
+			<input class="button digits" type="button" value="/"onclick="display.value += '/'">
+		</form>
+    </section>
+     </div>
+
 
 </body>
 </html>
